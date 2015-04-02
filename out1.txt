@@ -1,6 +1,9 @@
+Inserted key: 0.401553
+Number of nodes: 1
+
 maxkeys : 32
 When searched for 0.401553 we get:
-No matching key found
+0.401553 : hello
 
 Keys in given range 0.542566 and 0.543494 are: 
 No matching keys found.
@@ -300,7 +303,7 @@ Keys in given range 0.978272 and 0.979698 are:
 No matching keys found.
 
 Inserted key: 0.421192
-Number of nodes: 1
+Number of nodes: 3
 
 Inserted key: 0.292074
 Number of nodes: 3
@@ -639,7 +642,7 @@ Inserted key: 0.263804
 Number of nodes: 4
 
 Inserted key: 0.114367
-Number of nodes: 4
+Number of nodes: 5
 
 When searched for 0.904695 we get:
 No matching key found
@@ -654,7 +657,7 @@ When searched for 0.420012 we get:
 No matching key found
 
 Inserted key: 0.574431
-Number of nodes: 4
+Number of nodes: 5
 
 Keys in given range 0.027373 and 0.029335 are: 
 No matching keys found.
@@ -672,7 +675,7 @@ Keys in given range 0.901829 and 0.901855 are:
 No matching keys found.
 
 Inserted key: 0.645188
-Number of nodes: 4
+Number of nodes: 5
 
 Inserted key: 0.113933
 Number of nodes: 5
@@ -990,7 +993,7 @@ Inserted key: 0.884337
 Number of nodes: 6
 
 Inserted key: 0.332332
-Number of nodes: 7
+Number of nodes: 6
 
 Keys in given range 0.232686 and 0.234092 are: 
 No matching keys found.
@@ -1802,13 +1805,13 @@ Keys in given range 0.109014 and 0.109992 are:
 0.109704 : pp
 
 Inserted key: 0.196643
-Number of nodes: 10
+Number of nodes: 9
 
 When searched for 0.463144 we get:
 No matching key found
 
 Inserted key: 0.671175
-Number of nodes: 10
+Number of nodes: 9
 
 Keys in given range 0.553088 and 0.553508 are: 
 No matching keys found.
@@ -1817,10 +1820,10 @@ When searched for 0.619857 we get:
 No matching key found
 
 Inserted key: 0.672038
-Number of nodes: 10
+Number of nodes: 9
 
 Inserted key: 0.622327
-Number of nodes: 10
+Number of nodes: 9
 
 Keys in given range 0.453976 and 0.455914 are: 
 No matching keys found.
@@ -1838,7 +1841,7 @@ Keys in given range 0.265001 and 0.266789 are:
 No matching keys found.
 
 Inserted key: 0.198194
-Number of nodes: 10
+Number of nodes: 9
 
 When searched for 0.371154 we get:
 No matching key found
@@ -1856,7 +1859,7 @@ When searched for 0.827831 we get:
 No matching key found
 
 Inserted key: 0.485642
-Number of nodes: 10
+Number of nodes: 9
 
 When searched for 0.261375 we get:
 No matching key found
@@ -2009,19 +2012,19 @@ Keys in given range 0.212373 and 0.213319 are:
 No matching keys found.
 
 Inserted key: 0.267186
-Number of nodes: 10
+Number of nodes: 11
 
 When searched for 0.327859 we get:
 No matching key found
 
 Inserted key: 0.394205
-Number of nodes: 10
+Number of nodes: 11
 
 When searched for 0.267664 we get:
 No matching key found
 
 Inserted key: 0.87485
-Number of nodes: 10
+Number of nodes: 11
 
 Keys in given range 0.534789 and 0.536467 are: 
 No matching keys found.
@@ -2030,7 +2033,7 @@ When searched for 0.527781 we get:
 No matching key found
 
 Inserted key: 0.470647
-Number of nodes: 10
+Number of nodes: 11
 
 When searched for 0.77262 we get:
 No matching key found
@@ -2069,7 +2072,7 @@ Inserted key: 0.770176
 Number of nodes: 11
 
 Inserted key: 0.364886
-Number of nodes: 11
+Number of nodes: 12
 
 Keys in given range 0.381223 and 0.381833 are: 
 0.381566 : wbapw
@@ -2087,10 +2090,10 @@ Keys in given range 0.537953 and 0.538513 are:
 No matching keys found.
 
 Inserted key: 0.869703
-Number of nodes: 11
+Number of nodes: 12
 
 Inserted key: 0.285082
-Number of nodes: 11
+Number of nodes: 12
 
 When searched for 0.835807 we get:
 No matching key found
@@ -2099,22 +2102,22 @@ Keys in given range 0.75987 and 0.761292 are:
 No matching keys found.
 
 Inserted key: 0.628442
-Number of nodes: 11
+Number of nodes: 12
 
 Keys in given range 0.17427 and 0.175372 are: 
 No matching keys found.
 
 Inserted key: 0.77901
-Number of nodes: 12
+Number of nodes: 13
 
 When searched for 0.616429 we get:
 No matching key found
 
 Inserted key: 0.327871
-Number of nodes: 12
+Number of nodes: 13
 
 Inserted key: 0.230082
-Number of nodes: 12
+Number of nodes: 13
 
 When searched for 0.07766 we get:
 No matching key found
@@ -2126,19 +2129,19 @@ When searched for 0.873246 we get:
 No matching key found
 
 Inserted key: 0.039806
-Number of nodes: 12
+Number of nodes: 13
 
 Inserted key: 0.54042
-Number of nodes: 13
+Number of nodes: 14
 
 Inserted key: 0.714241
-Number of nodes: 13
+Number of nodes: 14
 
 When searched for 0.109177 we get:
 No matching key found
 
 Inserted key: 0.720816
-Number of nodes: 13
+Number of nodes: 14
 
 Keys in given range 0.228481 and 0.229585 are: 
 No matching keys found.
@@ -2147,7 +2150,7 @@ Keys in given range 0.90188 and 0.903416 are:
 No matching keys found.
 
 Inserted key: 0.381549
-Number of nodes: 13
+Number of nodes: 14
 
 Keys in given range 0.115791 and 0.116493 are: 
 No matching keys found.
@@ -2156,13 +2159,13 @@ Keys in given range 0.625178 and 0.626718 are:
 No matching keys found.
 
 Inserted key: 0.208717
-Number of nodes: 13
+Number of nodes: 14
 
 When searched for 0.26972 we get:
 No matching key found
 
 Inserted key: 0.756731
-Number of nodes: 13
+Number of nodes: 14
 
 Keys in given range 0.974382 and 0.976212 are: 
 No matching keys found.
@@ -2189,10 +2192,10 @@ Keys in given range 0.200685 and 0.201883 are:
 No matching keys found.
 
 Inserted key: 0.119268
-Number of nodes: 13
+Number of nodes: 14
 
 Inserted key: 0.882842
-Number of nodes: 14
+Number of nodes: 15
 
 When searched for 0.895593 we get:
 No matching key found
@@ -2204,13 +2207,13 @@ When searched for 0.297934 we get:
 No matching key found
 
 Inserted key: 0.387819
-Number of nodes: 14
+Number of nodes: 15
 
 Keys in given range 0.2437 and 0.245486 are: 
 No matching keys found.
 
 Inserted key: 0.836444
-Number of nodes: 14
+Number of nodes: 15
 
 When searched for 0.045899 we get:
 No matching key found
@@ -2228,7 +2231,7 @@ Keys in given range 0.704892 and 0.705038 are:
 No matching keys found.
 
 Inserted key: 0.070859
-Number of nodes: 14
+Number of nodes: 15
 
 When searched for 0.586299 we get:
 No matching key found
@@ -3341,7 +3344,7 @@ Inserted key: 0.237371
 Number of nodes: 16
 
 Inserted key: 0.062951
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.558359 and 0.559065 are: 
 No matching keys found.
@@ -3350,7 +3353,7 @@ Keys in given range 0.165427 and 0.165989 are:
 No matching keys found.
 
 Inserted key: 0.39986
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.24009 we get:
 No matching key found
@@ -3359,16 +3362,16 @@ When searched for 0.056038 we get:
 No matching key found
 
 Inserted key: 0.39949
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.47705
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.812296 and 0.812416 are: 
 No matching keys found.
 
 Inserted key: 0.093383
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.25626 we get:
 No matching key found
@@ -3380,7 +3383,7 @@ When searched for 0.305879 we get:
 No matching key found
 
 Inserted key: 0.541081
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.200014 and 0.201132 are: 
 No matching keys found.
@@ -3389,7 +3392,7 @@ When searched for 0.775936 we get:
 No matching key found
 
 Inserted key: 0.459308
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.772226 and 0.772918 are: 
 0.772558 : cudkveys
@@ -3419,10 +3422,10 @@ Keys in given range 0.171013 and 0.172195 are:
 No matching keys found.
 
 Inserted key: 0.765377
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.534071
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.268076 we get:
 No matching key found
@@ -3431,10 +3434,10 @@ When searched for 0.264186 we get:
 No matching key found
 
 Inserted key: 0.24122
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.29696
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.449448 we get:
 No matching key found
@@ -3443,7 +3446,7 @@ Keys in given range 0.027954 and 0.028184 are:
 No matching keys found.
 
 Inserted key: 0.625519
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.230397 we get:
 No matching key found
@@ -3452,10 +3455,10 @@ When searched for 0.809609 we get:
 No matching key found
 
 Inserted key: 0.311789
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.086211
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.186699 we get:
 No matching key found
@@ -3464,7 +3467,7 @@ Keys in given range 0.86105 and 0.861456 are:
 No matching keys found.
 
 Inserted key: 0.97793
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.092468 and 0.094332 are: 
 0.093383 : tlvegn
@@ -3486,7 +3489,7 @@ When searched for 0.861854 we get:
 No matching key found
 
 Inserted key: 0.272268
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.617662 we get:
 No matching key found
@@ -3508,7 +3511,7 @@ Keys in given range 0.126833 and 0.127117 are:
 No matching keys found.
 
 Inserted key: 0.951562
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.572336 and 0.572602 are: 
 No matching keys found.
@@ -3520,7 +3523,7 @@ When searched for 0.632841 we get:
 No matching key found
 
 Inserted key: 0.951565
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.654847 and 0.655317 are: 
 No matching keys found.
@@ -3529,7 +3532,7 @@ Keys in given range 0.702119 and 0.703689 are:
 No matching keys found.
 
 Inserted key: 0.867715
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.050416 we get:
 No matching key found
@@ -3541,19 +3544,19 @@ Keys in given range 0.241593 and 0.242843 are:
 No matching keys found.
 
 Inserted key: 0.556139
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.473769 we get:
 No matching key found
 
 Inserted key: 0.487452
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.152277
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.925359
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.465889 and 0.466335 are: 
 No matching keys found.
@@ -3577,16 +3580,16 @@ Keys in given range 0.024744 and 0.02644 are:
 0.025159 : cbe
 
 Inserted key: 0.016423
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.301442
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.068198 we get:
 No matching key found
 
 Inserted key: 0.829951
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.029508 and 0.029754 are: 
 No matching keys found.
@@ -3598,10 +3601,10 @@ When searched for 0.691684 we get:
 No matching key found
 
 Inserted key: 0.188574
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.703701
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.745934 and 0.747248 are: 
 0.746454 : p
@@ -3639,7 +3642,7 @@ Keys in given range 0.667878 and 0.669264 are:
 0.668896 : ypdqow
 
 Inserted key: 0.005474
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.755739 we get:
 No matching key found
@@ -3648,25 +3651,25 @@ Keys in given range 0.077753 and 0.078911 are:
 No matching keys found.
 
 Inserted key: 0.147235
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.668859 and 0.670807 are: 
 0.668896 : ypdqow
 
 Inserted key: 0.728186
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.511909 and 0.512165 are: 
 No matching keys found.
 
 Inserted key: 0.37799
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.501299 and 0.503191 are: 
 No matching keys found.
 
 Inserted key: 0.895129
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.03205 we get:
 No matching key found
@@ -3685,7 +3688,7 @@ When searched for 0.566985 we get:
 No matching key found
 
 Inserted key: 0.130184
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.208793 and 0.210177 are: 
 0.209031 : iujejei
@@ -3700,10 +3703,10 @@ Keys in given range 0.216376 and 0.21769 are:
 0.216606 : efbsph
 
 Inserted key: 0.975211
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.512922
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.031835 we get:
 No matching key found
@@ -3724,7 +3727,7 @@ When searched for 0.9282 we get:
 No matching key found
 
 Inserted key: 0.410486
-Number of nodes: 16
+Number of nodes: 17
 
 Keys in given range 0.757354 and 0.757816 are: 
 No matching keys found.
@@ -3736,16 +3739,16 @@ Keys in given range 0.091676 and 0.091736 are:
 No matching keys found.
 
 Inserted key: 0.643293
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.028923
-Number of nodes: 16
+Number of nodes: 17
 
 When searched for 0.736102 we get:
 No matching key found
 
 Inserted key: 0.694481
-Number of nodes: 16
+Number of nodes: 17
 
 Inserted key: 0.153934
 Number of nodes: 17
@@ -3960,7 +3963,7 @@ Keys in given range 0.242869 and 0.244775 are:
 No matching keys found.
 
 Inserted key: 0.216108
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.536718 we get:
 No matching key found
@@ -3981,13 +3984,13 @@ Keys in given range 0.364243 and 0.365063 are:
 0.364886 : ph
 
 Inserted key: 0.498676
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.254738 we get:
 No matching key found
 
 Inserted key: 0.721645
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.015269 we get:
 No matching key found
@@ -4004,16 +4007,16 @@ Keys in given range 0.219063 and 0.220705 are:
 0.219921 : hssoort
 
 Inserted key: 0.893294
-Number of nodes: 20
+Number of nodes: 21
 
 Inserted key: 0.476706
-Number of nodes: 20
+Number of nodes: 21
 
 Inserted key: 0.47122
-Number of nodes: 20
+Number of nodes: 21
 
 Inserted key: 0.858632
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.927679 we get:
 No matching key found
@@ -4022,13 +4025,13 @@ When searched for 0.860404 we get:
 No matching key found
 
 Inserted key: 0.860894
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.24516 we get:
 No matching key found
 
 Inserted key: 0.41535
-Number of nodes: 20
+Number of nodes: 21
 
 When searched for 0.351925 we get:
 No matching key found
@@ -4044,10 +4047,10 @@ When searched for 0.839356 we get:
 No matching key found
 
 Inserted key: 0.254041
-Number of nodes: 20
+Number of nodes: 21
 
 Inserted key: 0.125799
-Number of nodes: 20
+Number of nodes: 22
 
 When searched for 0.175036 we get:
 No matching key found
@@ -4065,13 +4068,13 @@ When searched for 0.464023 we get:
 No matching key found
 
 Inserted key: 0.105966
-Number of nodes: 21
+Number of nodes: 22
 
 Inserted key: 0.641549
-Number of nodes: 21
+Number of nodes: 22
 
 Inserted key: 0.261047
-Number of nodes: 21
+Number of nodes: 22
 
 Keys in given range 0.817123 and 0.817893 are: 
 No matching keys found.
@@ -4098,7 +4101,7 @@ Keys in given range 0.088894 and 0.090462 are:
 No matching keys found.
 
 Inserted key: 0.633543
-Number of nodes: 21
+Number of nodes: 22
 
 Keys in given range 0.167615 and 0.169455 are: 
 0.168128 : qzczgn
@@ -4113,7 +4116,7 @@ When searched for 0.526118 we get:
 No matching key found
 
 Inserted key: 0.512069
-Number of nodes: 21
+Number of nodes: 22
 
 When searched for 0.230154 we get:
 No matching key found
@@ -4341,7 +4344,7 @@ Keys in given range 0.74187 and 0.742136 are:
 No matching keys found.
 
 Inserted key: 0.260685
-Number of nodes: 23
+Number of nodes: 24
 
 When searched for 0.325098 we get:
 No matching key found
@@ -4350,7 +4353,7 @@ Keys in given range 0.988931 and 0.990147 are:
 No matching keys found.
 
 Inserted key: 0.858411
-Number of nodes: 23
+Number of nodes: 24
 
 Keys in given range 0.998614 and 0.998778 are: 
 No matching keys found.
@@ -5163,10 +5166,10 @@ Inserted key: 0.714336
 Number of nodes: 27
 
 Inserted key: 0.376305
-Number of nodes: 28
+Number of nodes: 27
 
 Inserted key: 0.290925
-Number of nodes: 28
+Number of nodes: 27
 
 Keys in given range 0.372653 and 0.373219 are: 
 No matching keys found.
@@ -5190,13 +5193,13 @@ Keys in given range 0.889312 and 0.889452 are:
 No matching keys found.
 
 Inserted key: 0.466782
-Number of nodes: 28
+Number of nodes: 27
 
 When searched for 0.710533 we get:
 No matching key found
 
 Inserted key: 0.986984
-Number of nodes: 28
+Number of nodes: 27
 
 When searched for 0.359708 we get:
 No matching key found
@@ -5205,13 +5208,13 @@ Keys in given range 0.333993 and 0.334875 are:
 No matching keys found.
 
 Inserted key: 0.944398
-Number of nodes: 28
+Number of nodes: 27
 
 When searched for 0.788915 we get:
 No matching key found
 
 Inserted key: 0.076529
-Number of nodes: 28
+Number of nodes: 27
 
 When searched for 0.313824 we get:
 No matching key found
@@ -5694,10 +5697,10 @@ Keys in given range 0.586684 and 0.587812 are:
 No matching keys found.
 
 Inserted key: 0.20316
-Number of nodes: 30
+Number of nodes: 29
 
 Inserted key: 0.094113
-Number of nodes: 30
+Number of nodes: 29
 
 When searched for 0.308096 we get:
 No matching key found
@@ -5712,13 +5715,13 @@ Keys in given range 0.23644 and 0.237364 are:
 No matching keys found.
 
 Inserted key: 0.33626
-Number of nodes: 31
+Number of nodes: 29
 
 Inserted key: 0.071814
-Number of nodes: 31
+Number of nodes: 29
 
 Inserted key: 0.401609
-Number of nodes: 31
+Number of nodes: 29
 
 When searched for 0.684342 we get:
 No matching key found
@@ -5730,7 +5733,7 @@ Keys in given range 0.827823 and 0.827997 are:
 No matching keys found.
 
 Inserted key: 0.386743
-Number of nodes: 31
+Number of nodes: 29
 
 When searched for 0.458038 we get:
 No matching key found
@@ -5742,7 +5745,7 @@ When searched for 0.07871 we get:
 No matching key found
 
 Inserted key: 0.090745
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.381349 and 0.382591 are: 
 0.381549 : bnqxkg
@@ -5759,7 +5762,7 @@ When searched for 0.711127 we get:
 No matching key found
 
 Inserted key: 0.130272
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.014371 and 0.015239 are: 
 0.01517 : dc
@@ -5768,13 +5771,13 @@ When searched for 0.40183 we get:
 No matching key found
 
 Inserted key: 0.216061
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.157605
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.012051
-Number of nodes: 31
+Number of nodes: 30
 
 When searched for 0.02465 we get:
 No matching key found
@@ -5789,13 +5792,13 @@ Keys in given range 0.157369 and 0.158905 are:
 0.157605 : xhcjxd
 
 Inserted key: 0.704487
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.577489
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.907172
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.015618 and 0.0163 are: 
 No matching keys found.
@@ -5805,28 +5808,28 @@ Keys in given range 0.546139 and 0.547733 are:
 0.547557 : k
 
 Inserted key: 0.093567
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.429248 and 0.429636 are: 
 No matching keys found.
 
 Inserted key: 0.353332
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.485937 and 0.486295 are: 
 No matching keys found.
 
 Inserted key: 0.968147
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.540964 and 0.541316 are: 
 0.541081 : xyrrsm
 
 Inserted key: 0.78898
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.38985
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.711525 and 0.712489 are: 
 No matching keys found.
@@ -5836,10 +5839,10 @@ Keys in given range 0.606515 and 0.607835 are:
 0.607771 : assd
 
 Inserted key: 0.939861
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.565052
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.038708 and 0.039836 are: 
 0.039806 : syez
@@ -5848,13 +5851,13 @@ When searched for 0.842025 we get:
 No matching key found
 
 Inserted key: 0.405016
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.020292
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.474771
-Number of nodes: 31
+Number of nodes: 30
 
 When searched for 0.662222 we get:
 No matching key found
@@ -5875,7 +5878,7 @@ Keys in given range 0.164967 and 0.165175 are:
 No matching keys found.
 
 Inserted key: 0.155742
-Number of nodes: 31
+Number of nodes: 30
 
 When searched for 0.926101 we get:
 No matching key found
@@ -5884,7 +5887,7 @@ Keys in given range 0.096036 and 0.096122 are:
 No matching keys found.
 
 Inserted key: 0.583092
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.652273 and 0.654081 are: 
 0.652986 : tyqm
@@ -5908,7 +5911,7 @@ When searched for 0.243066 we get:
 No matching key found
 
 Inserted key: 0.713557
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.650486 and 0.651054 are: 
 0.650829 : gvuph
@@ -5920,10 +5923,10 @@ When searched for 0.203239 we get:
 No matching key found
 
 Inserted key: 0.076589
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.522376
-Number of nodes: 31
+Number of nodes: 30
 
 When searched for 0.966283 we get:
 No matching key found
@@ -5947,13 +5950,13 @@ Keys in given range 0.658255 and 0.659725 are:
 No matching keys found.
 
 Inserted key: 0.220752
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 7e-05 and 0.0015 are: 
 No matching keys found.
 
 Inserted key: 0.868081
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.655875 and 0.657561 are: 
 0.657056 : fhisb
@@ -5973,19 +5976,19 @@ When searched for 0.946627 we get:
 No matching key found
 
 Inserted key: 0.792827
-Number of nodes: 31
+Number of nodes: 30
 
 When searched for 0.620009 we get:
 No matching key found
 
 Inserted key: 0.642287
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.495937
-Number of nodes: 31
+Number of nodes: 30
 
 Inserted key: 0.546822
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.015136 and 0.016926 are: 
 0.01517 : dc
@@ -5993,7 +5996,7 @@ Keys in given range 0.015136 and 0.016926 are:
 0.016423 : ftu
 
 Inserted key: 0.44946
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.248881 and 0.249803 are: 
 No matching keys found.
@@ -6002,7 +6005,7 @@ Keys in given range 0.432599 and 0.433913 are:
 0.433898 : ygqhsiqp
 
 Inserted key: 0.982687
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.923809 and 0.924031 are: 
 No matching keys found.
@@ -6011,7 +6014,7 @@ When searched for 0.082235 we get:
 No matching key found
 
 Inserted key: 0.120046
-Number of nodes: 31
+Number of nodes: 30
 
 Keys in given range 0.975678 and 0.975774 are: 
 No matching keys found.
@@ -6163,32 +6166,32 @@ Inserted key: 0.82341
 Number of nodes: 31
 
 Inserted key: 0.002688
-Number of nodes: 31
+Number of nodes: 32
 
 Inserted key: 0.491726
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.863122 and 0.864588 are: 
 0.864084 : tmdhhor
 
 Inserted key: 0.059415
-Number of nodes: 31
+Number of nodes: 32
 
 Inserted key: 0.136742
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.684776 and 0.685798 are: 
 0.685047 : dfok
 0.685142 : obpoq
 
 Inserted key: 0.302195
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.989922 we get:
 No matching key found
 
 Inserted key: 0.507901
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.696185 and 0.698117 are: 
 0.697462 : wilu
@@ -6211,16 +6214,16 @@ When searched for 0.970357 we get:
 No matching key found
 
 Inserted key: 0.546454
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.774743 we get:
 No matching key found
 
 Inserted key: 0.413548
-Number of nodes: 31
+Number of nodes: 32
 
 Inserted key: 0.62142
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.455095 and 0.455229 are: 
 No matching keys found.
@@ -6229,19 +6232,19 @@ When searched for 0.222354 we get:
 No matching key found
 
 Inserted key: 0.775119
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.092102 we get:
 No matching key found
 
 Inserted key: 0.284322
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.882516 we get:
 No matching key found
 
 Inserted key: 0.558596
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.629986 we get:
 No matching key found
@@ -6250,13 +6253,13 @@ When searched for 0.558404 we get:
 No matching key found
 
 Inserted key: 0.21473
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.86547 we get:
 No matching key found
 
 Inserted key: 0.219297
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.960492 and 0.960926 are: 
 No matching keys found.
@@ -6274,10 +6277,10 @@ When searched for 0.300596 we get:
 No matching key found
 
 Inserted key: 0.578271
-Number of nodes: 31
+Number of nodes: 32
 
 Inserted key: 0.755445
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.421644 we get:
 No matching key found
@@ -6286,7 +6289,7 @@ When searched for 0.265613 we get:
 No matching key found
 
 Inserted key: 0.763086
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.985201 we get:
 No matching key found
@@ -6305,7 +6308,7 @@ When searched for 0.042191 we get:
 No matching key found
 
 Inserted key: 0.755104
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.838847 and 0.840239 are: 
 0.839716 : xhu
@@ -6320,7 +6323,7 @@ When searched for 0.55495 we get:
 No matching key found
 
 Inserted key: 0.643637
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.434587 and 0.436267 are: 
 No matching keys found.
@@ -6343,7 +6346,7 @@ When searched for 0.156392 we get:
 No matching key found
 
 Inserted key: 0.305016
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.686391 and 0.688227 are: 
 No matching keys found.
@@ -6352,10 +6355,10 @@ Keys in given range 0.51935 and 0.51941 are:
 No matching keys found.
 
 Inserted key: 0.771599
-Number of nodes: 31
+Number of nodes: 32
 
 Inserted key: 0.820389
-Number of nodes: 31
+Number of nodes: 32
 
 Keys in given range 0.267278 and 0.267666 are: 
 No matching keys found.
@@ -6370,7 +6373,7 @@ When searched for 0.781182 we get:
 No matching key found
 
 Inserted key: 0.343739
-Number of nodes: 31
+Number of nodes: 32
 
 When searched for 0.736516 we get:
 No matching key found
@@ -6386,19 +6389,19 @@ Keys in given range 0.060027 and 0.062023 are:
 0.061392 : ukrcf
 
 Inserted key: 0.807603
-Number of nodes: 32
+Number of nodes: 33
 
 Keys in given range 0.92373 and 0.924048 are: 
 No matching keys found.
 
 Inserted key: 0.52158
-Number of nodes: 32
+Number of nodes: 33
 
 Keys in given range 0.916155 and 0.917785 are: 
 No matching keys found.
 
 Inserted key: 0.799752
-Number of nodes: 32
+Number of nodes: 33
 
 Keys in given range 0.602596 and 0.60402 are: 
 No matching keys found.
@@ -6417,7 +6420,7 @@ When searched for 0.608799 we get:
 No matching key found
 
 Inserted key: 0.682333
-Number of nodes: 32
+Number of nodes: 33
 
 When searched for 0.448984 we get:
 No matching key found
@@ -6426,7 +6429,7 @@ Keys in given range 0.039655 and 0.041579 are:
 0.039806 : syez
 
 Inserted key: 0.471178
-Number of nodes: 32
+Number of nodes: 33
 
 Keys in given range 0.046475 and 0.048031 are: 
 No matching keys found.
@@ -6453,10 +6456,10 @@ When searched for 0.02178 we get:
 No matching key found
 
 Inserted key: 0.322899
-Number of nodes: 32
+Number of nodes: 34
 
 Inserted key: 0.942552
-Number of nodes: 32
+Number of nodes: 34
 
 Keys in given range 0.136949 and 0.138447 are: 
 0.138161 : nsg
@@ -6479,19 +6482,19 @@ When searched for 0.37709 we get:
 No matching key found
 
 Inserted key: 0.566617
-Number of nodes: 32
+Number of nodes: 34
 
 When searched for 0.166783 we get:
 No matching key found
 
 Inserted key: 0.232659
-Number of nodes: 32
+Number of nodes: 34
 
 When searched for 0.592732 we get:
 No matching key found
 
 Inserted key: 0.36119
-Number of nodes: 32
+Number of nodes: 34
 
 When searched for 0.815641 we get:
 No matching key found
@@ -6503,13 +6506,13 @@ Keys in given range 0.115325 and 0.115937 are:
 No matching keys found.
 
 Inserted key: 0.292293
-Number of nodes: 32
+Number of nodes: 34
 
 Inserted key: 0.32258
-Number of nodes: 32
+Number of nodes: 34
 
 Inserted key: 0.562206
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.44681 and 0.447954 are: 
 0.447147 : ykit
@@ -6518,7 +6521,7 @@ Keys in given range 0.062327 and 0.062731 are:
 No matching keys found.
 
 Inserted key: 0.749558
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.747751 and 0.749469 are: 
 0.748054 : lhu
@@ -6527,7 +6530,7 @@ Keys in given range 0.681617 and 0.683087 are:
 0.682333 : npl
 
 Inserted key: 0.176345
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.071633 and 0.071983 are: 
 0.071662 : mhtmutkw
@@ -6537,16 +6540,16 @@ Keys in given range 0.851001 and 0.852099 are:
 No matching keys found.
 
 Inserted key: 0.84744
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.490834 we get:
 No matching key found
 
 Inserted key: 0.282053
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.638777
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.342828 we get:
 No matching key found
@@ -6558,7 +6561,7 @@ When searched for 0.023053 we get:
 No matching key found
 
 Inserted key: 0.06225
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.615166 we get:
 No matching key found
@@ -6576,22 +6579,22 @@ Keys in given range 0.648497 and 0.650355 are:
 0.649393 : qkwlzr
 
 Inserted key: 0.354365
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.543137
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.245923
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.52683
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.03569 and 0.037176 are: 
 No matching keys found.
 
 Inserted key: 0.869609
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.737228 and 0.73776 are: 
 No matching keys found.
@@ -6600,16 +6603,16 @@ When searched for 0.914368 we get:
 No matching key found
 
 Inserted key: 0.87744
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.711914 and 0.712802 are: 
 0.712591 : z
 
 Inserted key: 0.526406
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.169214
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.299534 we get:
 No matching key found
@@ -6631,7 +6634,7 @@ Keys in given range 0.338968 and 0.339312 are:
 No matching keys found.
 
 Inserted key: 0.690105
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.358445 and 0.358751 are: 
 No matching keys found.
@@ -6640,16 +6643,16 @@ Keys in given range 0.811241 and 0.811997 are:
 0.811925 : r
 
 Inserted key: 0.237297
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.368201
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.182182 and 0.182328 are: 
 No matching keys found.
 
 Inserted key: 0.200667
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.906505 we get:
 No matching key found
@@ -6658,7 +6661,7 @@ Keys in given range 0.68531 and 0.686644 are:
 No matching keys found.
 
 Inserted key: 0.226687
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.820949 we get:
 No matching key found
@@ -6676,23 +6679,23 @@ When searched for 0.908362 we get:
 No matching key found
 
 Inserted key: 0.076132
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.162795 we get:
 No matching key found
 
 Inserted key: 0.102516
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.147399 and 0.149147 are: 
 0.148518 : jphu
 0.14893 : mfe
 
 Inserted key: 0.745481
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.767264
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.166401 we get:
 No matching key found
@@ -6701,13 +6704,13 @@ Keys in given range 0.977361 and 0.978355 are:
 0.97793 : ikmq
 
 Inserted key: 0.758072
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.915022 we get:
 No matching key found
 
 Inserted key: 0.422896
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.870448 we get:
 No matching key found
@@ -6716,19 +6719,19 @@ When searched for 0.126497 we get:
 No matching key found
 
 Inserted key: 0.910872
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.425284 and 0.425682 are: 
 No matching keys found.
 
 Inserted key: 0.315587
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.13811
-Number of nodes: 33
+Number of nodes: 37
 
 Inserted key: 0.112464
-Number of nodes: 33
+Number of nodes: 37
 
 When searched for 0.526971 we get:
 No matching key found
@@ -6749,7 +6752,7 @@ When searched for 0.114932 we get:
 No matching key found
 
 Inserted key: 0.534387
-Number of nodes: 33
+Number of nodes: 37
 
 Keys in given range 0.165428 and 0.16674 are: 
 No matching keys found.
@@ -6758,7 +6761,7 @@ Keys in given range 0.037249 and 0.038701 are:
 No matching keys found.
 
 Inserted key: 0.092829
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.844974 we get:
 No matching key found
@@ -6770,7 +6773,7 @@ When searched for 0.121366 we get:
 No matching key found
 
 Inserted key: 0.607752
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.38018 we get:
 No matching key found
@@ -6791,19 +6794,19 @@ Keys in given range 0.709037 and 0.709491 are:
 No matching keys found.
 
 Inserted key: 0.536056
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.052803 and 0.053199 are: 
 No matching keys found.
 
 Inserted key: 0.018145
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.422165
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.531912
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.640059 we get:
 No matching key found
@@ -6821,13 +6824,13 @@ Keys in given range 0.65693 and 0.658918 are:
 0.657875 : sxgom
 
 Inserted key: 0.533864
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.745132
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.062065
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.755532 and 0.756656 are: 
 No matching keys found.
@@ -6842,22 +6845,22 @@ Keys in given range 0.285061 and 0.285205 are:
 0.285082 : usufi
 
 Inserted key: 0.446122
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.170626 and 0.171246 are: 
 No matching keys found.
 
 Inserted key: 0.77266
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.573446 we get:
 No matching key found
 
 Inserted key: 0.217236
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.498162
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.835715 and 0.835825 are: 
 No matching keys found.
@@ -6880,7 +6883,7 @@ Keys in given range 0.460392 and 0.461512 are:
 0.461339 : x
 
 Inserted key: 0.068
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.926915 and 0.927427 are: 
 0.927222 : monp
@@ -6898,19 +6901,19 @@ Keys in given range 0.907699 and 0.908731 are:
 0.908595 : dxmgqbi
 
 Inserted key: 0.392734
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.378381 we get:
 No matching key found
 
 Inserted key: 0.679124
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.790128 we get:
 No matching key found
 
 Inserted key: 0.264373
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.16858 we get:
 No matching key found
@@ -6922,45 +6925,45 @@ When searched for 0.675921 we get:
 No matching key found
 
 Inserted key: 0.257339
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.784234
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.13276 and 0.134342 are: 
 0.133869 : qrtnu
 0.134146 : gbcqr
 
 Inserted key: 0.873194
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.837105 and 0.837483 are: 
 0.83732 : ndsgkgi
 
 Inserted key: 0.369798
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.407782 and 0.408568 are: 
 No matching keys found.
 
 Inserted key: 0.246896
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.399014
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.943398 and 0.944522 are: 
 0.943915 : ycklab
 0.944398 : svoyt
 
 Inserted key: 0.74274
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.192697 and 0.194545 are: 
 No matching keys found.
 
 Inserted key: 0.000798
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.760182 and 0.761622 are: 
 0.760488 : ekc
@@ -7005,13 +7008,13 @@ When searched for 0.814109 we get:
 No matching key found
 
 Inserted key: 0.35694
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.951332
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.224239
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.584807 we get:
 No matching key found
@@ -7023,16 +7026,16 @@ When searched for 0.179857 we get:
 No matching key found
 
 Inserted key: 0.739636
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.524281 we get:
 No matching key found
 
 Inserted key: 0.886356
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.866077
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.580364 and 0.582046 are: 
 No matching keys found.
@@ -7050,7 +7053,7 @@ Keys in given range 0.238094 and 0.238636 are:
 No matching keys found.
 
 Inserted key: 0.747178
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.805434 we get:
 No matching key found
@@ -7064,7 +7067,7 @@ Keys in given range 0.381558 and 0.383112 are:
 0.382965 : dttifxg
 
 Inserted key: 0.107098
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.729063 and 0.731005 are: 
 0.730262 : fpfoj
@@ -7076,13 +7079,13 @@ When searched for 0.011908 we get:
 No matching key found
 
 Inserted key: 0.403053
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.560069
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.505786
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.740345 we get:
 No matching key found
@@ -7098,10 +7101,10 @@ Keys in given range 0.493259 and 0.493495 are:
 No matching keys found.
 
 Inserted key: 0.374219
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.173908
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.563 we get:
 No matching key found
@@ -7116,19 +7119,19 @@ When searched for 0.98324 we get:
 No matching key found
 
 Inserted key: 0.048544
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.310379 we get:
 No matching key found
 
 Inserted key: 0.841868
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.985364
-Number of nodes: 34
+Number of nodes: 37
 
 Inserted key: 0.574435
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.673858 we get:
 No matching key found
@@ -7137,31 +7140,31 @@ Keys in given range 0.475435 and 0.475831 are:
 No matching keys found.
 
 Inserted key: 0.016482
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.179649 and 0.181327 are: 
 0.180501 : rcersa
 
 Inserted key: 0.519794
-Number of nodes: 34
+Number of nodes: 37
 
 When searched for 0.505855 we get:
 No matching key found
 
 Inserted key: 0.564528
-Number of nodes: 34
+Number of nodes: 37
 
 Keys in given range 0.03738 and 0.037812 are: 
 No matching keys found.
 
 Inserted key: 0.688859
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.669349 we get:
 No matching key found
 
 Inserted key: 0.540707
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.821412 and 0.82283 are: 
 0.822216 : cfanrl
@@ -7170,7 +7173,7 @@ Keys in given range 0.932246 and 0.933154 are:
 No matching keys found.
 
 Inserted key: 0.492024
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.280055 we get:
 No matching key found
@@ -7179,16 +7182,16 @@ Keys in given range 0.683047 and 0.683071 are:
 No matching keys found.
 
 Inserted key: 0.335899
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.31343
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.255472
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.644924
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.323922 and 0.325864 are: 
 0.324673 : nfvyk
@@ -7205,16 +7208,16 @@ Keys in given range 0.138065 and 0.140003 are:
 0.139549 : nxngy
 
 Inserted key: 0.922992
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.192572 we get:
 No matching key found
 
 Inserted key: 0.403445
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.542189
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.132382 we get:
 No matching key found
@@ -7223,7 +7226,7 @@ When searched for 0.675275 we get:
 No matching key found
 
 Inserted key: 0.086842
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.97577 and 0.97758 are: 
 No matching keys found.
@@ -7246,10 +7249,10 @@ When searched for 0.696016 we get:
 No matching key found
 
 Inserted key: 0.262685
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.27698
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.303987 and 0.303991 are: 
 No matching keys found.
@@ -7270,13 +7273,13 @@ When searched for 0.153226 we get:
 No matching key found
 
 Inserted key: 0.607806
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.600076 and 0.600804 are: 
 No matching keys found.
 
 Inserted key: 0.381127
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.91703 we get:
 No matching key found
@@ -7285,7 +7288,7 @@ When searched for 0.375665 we get:
 No matching key found
 
 Inserted key: 0.69957
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.485268 and 0.487 are: 
 0.485549 : qwacgtx
@@ -7296,7 +7299,7 @@ Keys in given range 0.588461 and 0.589537 are:
 0.589302 : sedhgttp
 
 Inserted key: 0.527882
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.04462 and 0.044834 are: 
 0.044678 : wfec
@@ -7308,7 +7311,7 @@ Keys in given range 0.645234 and 0.646574 are:
 0.64639 : cccs
 
 Inserted key: 0.557452
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.757258 and 0.757834 are: 
 No matching keys found.
@@ -7323,7 +7326,7 @@ Keys in given range 0.575782 and 0.576304 are:
 No matching keys found.
 
 Inserted key: 0.33682
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.80448 and 0.805928 are: 
 0.805101 : mtwptno
@@ -7332,7 +7335,7 @@ Keys in given range 0.271393 and 0.271949 are:
 No matching keys found.
 
 Inserted key: 0.704396
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.813993 and 0.815099 are: 
 0.814602 : kej
@@ -7341,7 +7344,7 @@ When searched for 0.988255 we get:
 No matching key found
 
 Inserted key: 0.613037
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.476374 and 0.47765 are: 
 0.476706 : ycmzhe
@@ -7364,13 +7367,13 @@ When searched for 0.161377 we get:
 No matching key found
 
 Inserted key: 0.650737
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.616459
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.812359
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.852925 we get:
 No matching key found
@@ -7392,19 +7395,19 @@ When searched for 0.06746 we get:
 No matching key found
 
 Inserted key: 0.264346
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.80182 we get:
 No matching key found
 
 Inserted key: 0.511479
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.500841 and 0.502257 are: 
 No matching keys found.
 
 Inserted key: 0.41089
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.768499 we get:
 No matching key found
@@ -7431,7 +7434,7 @@ Keys in given range 0.681508 and 0.682256 are:
 No matching keys found.
 
 Inserted key: 0.274395
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.23525 and 0.235748 are: 
 No matching keys found.
@@ -7440,7 +7443,7 @@ Keys in given range 0.65805 and 0.658474 are:
 No matching keys found.
 
 Inserted key: 0.090176
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.795915 we get:
 No matching key found
@@ -7459,7 +7462,7 @@ When searched for 0.917901 we get:
 No matching key found
 
 Inserted key: 0.596081
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.872657 and 0.873373 are: 
 0.873194 : iwjkqce
@@ -7492,22 +7495,22 @@ Keys in given range 0.892677 and 0.893023 are:
 0.892965 : jxiongv
 
 Inserted key: 0.326228
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.378035 and 0.379601 are: 
 0.379396 : hhvroc
 
 Inserted key: 0.539647
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.392153
-Number of nodes: 37
+Number of nodes: 38
 
 When searched for 0.544975 we get:
 No matching key found
 
 Inserted key: 0.030048
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.071634 and 0.073368 are: 
 0.071662 : mhtmutkw
@@ -7517,7 +7520,7 @@ Keys in given range 0.128144 and 0.129026 are:
 No matching keys found.
 
 Inserted key: 0.814921
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.231713 and 0.232979 are: 
 0.232659 : khh
@@ -7532,16 +7535,16 @@ Keys in given range 0.763922 and 0.764358 are:
 No matching keys found.
 
 Inserted key: 0.660622
-Number of nodes: 37
+Number of nodes: 38
 
 Inserted key: 0.856576
-Number of nodes: 37
+Number of nodes: 38
 
 Keys in given range 0.834429 and 0.835713 are: 
 0.834871 : rrhw
 
 Inserted key: 0.601475
-Number of nodes: 38
+Number of nodes: 39
 
 When searched for 0.152925 we get:
 No matching key found
@@ -7553,7 +7556,7 @@ Keys in given range 0.906241 and 0.907459 are:
 0.907172 : lwoxrhfv
 
 Inserted key: 0.361602
-Number of nodes: 38
+Number of nodes: 39
 
 Keys in given range 0.307289 and 0.307881 are: 
 No matching keys found.
@@ -7582,7 +7585,7 @@ When searched for 0.936576 we get:
 No matching key found
 
 Inserted key: 0.970026
-Number of nodes: 38
+Number of nodes: 39
 
 When searched for 0.129085 we get:
 No matching key found
@@ -7619,7 +7622,7 @@ When searched for 0.358726 we get:
 No matching key found
 
 Inserted key: 0.48405
-Number of nodes: 38
+Number of nodes: 39
 
 Keys in given range 0.087991 and 0.089401 are: 
 No matching keys found.
@@ -7629,7 +7632,7 @@ Keys in given range 0.059279 and 0.061267 are:
 0.060347 : gyufct
 
 Inserted key: 0.060022
-Number of nodes: 38
+Number of nodes: 39
 
 When searched for 0.435046 we get:
 No matching key found
@@ -7641,7 +7644,7 @@ When searched for 0.594624 we get:
 No matching key found
 
 Inserted key: 0.284941
-Number of nodes: 38
+Number of nodes: 39
 
 Keys in given range 0.050989 and 0.051305 are: 
 No matching keys found.
@@ -7656,7 +7659,7 @@ When searched for 0.722117 we get:
 No matching key found
 
 Inserted key: 0.231766
-Number of nodes: 38
+Number of nodes: 39
 
 Keys in given range 0.543938 and 0.545454 are: 
 No matching keys found.
@@ -7666,16 +7669,16 @@ Keys in given range 0.713914 and 0.715062 are:
 0.714336 : jfoehly
 
 Inserted key: 0.854267
-Number of nodes: 38
+Number of nodes: 39
 
 When searched for 0.28001 we get:
 No matching key found
 
 Inserted key: 0.375643
-Number of nodes: 38
+Number of nodes: 39
 
 Inserted key: 0.204613
-Number of nodes: 38
+Number of nodes: 39
 
 Keys in given range 0.42599 and 0.426306 are: 
 No matching keys found.
@@ -7684,10 +7687,10 @@ Keys in given range 0.034026 and 0.035944 are:
 0.034434 : opbzty
 
 Inserted key: 0.786949
-Number of nodes: 38
+Number of nodes: 39
 
 Inserted key: 0.242988
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.090214 and 0.091378 are: 
 0.090745 : yv
@@ -7699,16 +7702,16 @@ When searched for 0.153289 we get:
 No matching key found
 
 Inserted key: 0.679385
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.302079
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.357084 we get:
 No matching key found
 
 Inserted key: 0.741623
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.996732 and 0.997944 are: 
 0.99722 : sz
@@ -7723,26 +7726,26 @@ Keys in given range 0.383171 and 0.384101 are:
 No matching keys found.
 
 Inserted key: 0.631138
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.136988
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.800273
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.065612 and 0.067524 are: 
 0.066876 : dlw
 0.067416 : dlxxuyy
 
 Inserted key: 0.712964
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.070884 and 0.071366 are: 
 No matching keys found.
 
 Inserted key: 0.456
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.014604 and 0.015492 are: 
 0.01517 : dc
@@ -7754,7 +7757,7 @@ When searched for 0.35561 we get:
 No matching key found
 
 Inserted key: 0.985448
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.066056 we get:
 No matching key found
@@ -7763,13 +7766,13 @@ Keys in given range 0.445627 and 0.446031 are:
 0.445694 : rwwdq
 
 Inserted key: 0.123939
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.113791
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.73797
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.339309 and 0.339417 are: 
 No matching keys found.
@@ -7778,10 +7781,10 @@ When searched for 0.214083 we get:
 No matching key found
 
 Inserted key: 0.597119
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.829926
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.484973 we get:
 No matching key found
@@ -7793,13 +7796,13 @@ When searched for 0.247078 we get:
 No matching key found
 
 Inserted key: 0.874067
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.395091 we get:
 No matching key found
 
 Inserted key: 0.796355
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.412287 we get:
 No matching key found
@@ -7830,7 +7833,7 @@ Keys in given range 0.432873 and 0.434487 are:
 0.433898 : ygqhsiqp
 
 Inserted key: 0.172282
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.482586 we get:
 No matching key found
@@ -7845,7 +7848,7 @@ When searched for 0.427793 we get:
 No matching key found
 
 Inserted key: 0.048394
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.024235 we get:
 No matching key found
@@ -7857,35 +7860,35 @@ Keys in given range 0.77273 and 0.773006 are:
 No matching keys found.
 
 Inserted key: 0.019047
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.195088
-Number of nodes: 38
+Number of nodes: 40
 
 Inserted key: 0.16784
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.314245 we get:
 No matching key found
 
 Inserted key: 0.288247
-Number of nodes: 38
+Number of nodes: 40
 
 When searched for 0.792272 we get:
 No matching key found
 
 Inserted key: 0.806994
-Number of nodes: 38
+Number of nodes: 40
 
 Keys in given range 0.37976 and 0.38153 are: 
 0.381062 : cld
 0.381127 : ftwso
 
 Inserted key: 0.262968
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.383054
-Number of nodes: 39
+Number of nodes: 40
 
 Keys in given range 0.29417 and 0.296054 are: 
 No matching keys found.
@@ -7894,13 +7897,13 @@ Keys in given range 0.297836 and 0.298084 are:
 No matching keys found.
 
 Inserted key: 0.137095
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.5709 we get:
 No matching key found
 
 Inserted key: 0.242736
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.299491 we get:
 No matching key found
@@ -7912,7 +7915,7 @@ When searched for 0.813889 we get:
 No matching key found
 
 Inserted key: 0.832659
-Number of nodes: 39
+Number of nodes: 40
 
 Keys in given range 0.666958 and 0.666968 are: 
 No matching keys found.
@@ -7928,16 +7931,16 @@ Keys in given range 0.215799 and 0.216439 are:
 0.216108 : ddlbbdt
 
 Inserted key: 0.731802
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.350134
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.318685
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.26778
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.362105 we get:
 No matching key found
@@ -7947,7 +7950,7 @@ Keys in given range 0.782738 and 0.784362 are:
 0.784234 : zvtxzaha
 
 Inserted key: 0.531661
-Number of nodes: 39
+Number of nodes: 40
 
 Keys in given range 0.836063 and 0.837409 are: 
 0.836444 : o
@@ -7969,7 +7972,7 @@ When searched for 0.570634 we get:
 No matching key found
 
 Inserted key: 0.306974
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.888874 we get:
 No matching key found
@@ -7981,37 +7984,37 @@ Keys in given range 0.133912 and 0.133916 are:
 No matching keys found.
 
 Inserted key: 0.799487
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.648199 we get:
 No matching key found
 
 Inserted key: 0.665886
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.12811
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.460749 we get:
 No matching key found
 
 Inserted key: 0.114483
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.238967
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.152953 we get:
 No matching key found
 
 Inserted key: 0.958094
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.718515
-Number of nodes: 39
+Number of nodes: 40
 
 Inserted key: 0.376292
-Number of nodes: 39
+Number of nodes: 40
 
 When searched for 0.413357 we get:
 No matching key found
@@ -8023,10 +8026,10 @@ Keys in given range 0.954069 and 0.955875 are:
 No matching keys found.
 
 Inserted key: 0.256874
-Number of nodes: 39
+Number of nodes: 41
 
 Inserted key: 0.122936
-Number of nodes: 40
+Number of nodes: 41
 
 Keys in given range 0.680804 and 0.682556 are: 
 0.682333 : npl
@@ -8211,7 +8214,7 @@ When searched for 0.047735 we get:
 No matching key found
 
 Inserted key: 0.062206
-Number of nodes: 42
+Number of nodes: 41
 
 When searched for 0.970618 we get:
 No matching key found
@@ -8220,13 +8223,13 @@ Keys in given range 0.023446 and 0.024434 are:
 0.023961 : mufh
 
 Inserted key: 0.345996
-Number of nodes: 42
+Number of nodes: 41
 
 Keys in given range 0.603241 and 0.604029 are: 
 No matching keys found.
 
 Inserted key: 0.523704
-Number of nodes: 42
+Number of nodes: 41
 
 Keys in given range 0.710315 and 0.712059 are: 
 No matching keys found.
@@ -8960,7 +8963,7 @@ Inserted key: 0.865043
 Number of nodes: 44
 
 Inserted key: 0.167171
-Number of nodes: 45
+Number of nodes: 44
 
 When searched for 0.869113 we get:
 No matching key found
@@ -8969,7 +8972,7 @@ Keys in given range 0.875059 and 0.876833 are:
 0.876473 : jmjkdiuc
 
 Inserted key: 0.44325
-Number of nodes: 46
+Number of nodes: 45
 
 When searched for 0.184289 we get:
 No matching key found
@@ -8978,7 +8981,7 @@ Keys in given range 0.259016 and 0.260478 are:
 No matching keys found.
 
 Inserted key: 0.616895
-Number of nodes: 46
+Number of nodes: 45
 
 When searched for 0.218906 we get:
 No matching key found
@@ -9009,10 +9012,10 @@ When searched for 0.621222 we get:
 No matching key found
 
 Inserted key: 0.599489
-Number of nodes: 46
+Number of nodes: 45
 
 Inserted key: 0.936071
-Number of nodes: 46
+Number of nodes: 45
 
 When searched for 0.198931 we get:
 No matching key found
@@ -9022,22 +9025,22 @@ Keys in given range 0.371859 and 0.373413 are:
 0.372784 : jcwc
 
 Inserted key: 0.504982
-Number of nodes: 46
+Number of nodes: 45
 
 Inserted key: 0.322812
-Number of nodes: 46
+Number of nodes: 45
 
 Inserted key: 0.308076
-Number of nodes: 46
+Number of nodes: 45
 
 Inserted key: 0.284201
-Number of nodes: 46
+Number of nodes: 45
 
 Keys in given range 0.972408 and 0.973664 are: 
 0.972995 : xrhrk
 
 Inserted key: 0.333465
-Number of nodes: 46
+Number of nodes: 45
 
 Keys in given range 0.78006 and 0.781494 are: 
 0.781158 : llcuexp
@@ -9074,7 +9077,7 @@ When searched for 0.526148 we get:
 No matching key found
 
 Inserted key: 0.655026
-Number of nodes: 47
+Number of nodes: 46
 
 When searched for 0.109613 we get:
 No matching key found
@@ -9086,7 +9089,7 @@ When searched for 0.985471 we get:
 No matching key found
 
 Inserted key: 0.786815
-Number of nodes: 47
+Number of nodes: 46
 
 When searched for 0.193551 we get:
 No matching key found
@@ -9098,19 +9101,19 @@ Keys in given range 0.786839 and 0.788163 are:
 0.786949 : chekqmqd
 
 Inserted key: 0.461002
-Number of nodes: 47
+Number of nodes: 46
 
 Inserted key: 0.833504
-Number of nodes: 47
+Number of nodes: 46
 
 Inserted key: 0.258667
-Number of nodes: 47
+Number of nodes: 46
 
 Inserted key: 0.296798
 Number of nodes: 47
 
 Inserted key: 0.007789
-Number of nodes: 48
+Number of nodes: 47
 
 Keys in given range 0.161852 and 0.162298 are: 
 No matching keys found.
@@ -9125,25 +9128,37 @@ When searched for 0.931807 we get:
 No matching key found
 
 Inserted key: 0.480862
-Number of nodes: 48
+Number of nodes: 47
 
 Inserted key: 0.873979
-Number of nodes: 48
+Number of nodes: 47
 
 Inserted key: 0.186601
-Number of nodes: 48
+Number of nodes: 47
 
 Keys in given range 0.746376 and 0.746708 are: 
 0.746454 : p
 0.746559 : vojvoxj
 
 Inserted key: 0.608357
-Number of nodes: 48
+Number of nodes: 47
 
 Keys in given range 0.148075 and 0.149321 are: 
 0.148518 : jphu
 0.14893 : mfe
 
-864	11198
-314	2064
-304	2005
+Insert query stats:
+Minimum: 886 us
+Maximum : 11496 us
+Average: 1304.35 us
+Std. dev. : 379.824 us
+Point query stats:
+Minimum: 344 us
+Maximum : 1246 us
+Average: 660.022 us
+Std. dev. : 100.029 us
+Range query stats:
+Minimum: 345 us
+Maximum : 2053 us
+Average: 753.693 us
+Std. dev. : 216.66 us

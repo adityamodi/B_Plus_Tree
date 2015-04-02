@@ -2,6 +2,8 @@
 using namespace std;
 #define INF 100.0
 
+typedef long long ll;
+
 int M,keyCount=0,nodeCount=0;
 char filestr[16];
 string bpt;
@@ -113,7 +115,7 @@ int main(){
 	double key,key2;
 	vector<double> qkey;
 	vector<string> qdata;
-	vector<int> insertTime, pointTime, rangeTime;
+	vector<ll> insertTime, pointTime, rangeTime;
 	string data;
 	ifstream config;
 	config.open("bplustree.config");
@@ -124,7 +126,20 @@ int main(){
 		config >> nodeCount;
 		config >> keyCount;
 	}
-	else bpt = makeRoot();
+	else{
+		bpt = makeRoot();
+		ifstream init;
+		init.open("assgn2_bplus_data.txt");
+		while(!init.eof() && init >> key){
+			init >> data;
+			auto t0 = high_resolution_clock::now();
+			addKey(bpt,key,data);
+			auto t1 = high_resolution_clock::now();
+			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
+			cout << "Inserted key: " << key << "\n";
+			cout << "Number of nodes: " << nodeCount << "\n\n";	
+		}
+	}
 	config.close();
 	cout << "maxkeys : " << M << "\n";
 	ifstream pnts;
@@ -136,7 +151,7 @@ int main(){
 			auto t0 = high_resolution_clock::now();
 			addKey(bpt,key,data);
 			auto t1 = high_resolution_clock::now();
-			insertTime.push_back(duration_cast<microseconds>(t1-t0).count());
+			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			cout << "Inserted key: " << key << "\n";
 			cout << "Number of nodes: " << nodeCount << "\n\n";
 		}
@@ -147,7 +162,7 @@ int main(){
 			auto t0 = high_resolution_clock::now();
 			pointQuery(bpt,key,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
-			pointTime.push_back(duration_cast<microseconds>(t1-t0).count());
+			pointTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			if(!qkey.size()) cout << "No matching key found\n";
 			else cout << qkey[0] << " : " << qdata[0] << "\n";
 			cout << "\n";
@@ -160,7 +175,7 @@ int main(){
 			auto t0 = high_resolution_clock::now();
 			rangeQuery(bpt,key - key2,key + key2,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
-			rangeTime.push_back(duration_cast<microseconds>(t1-t0).count());
+			rangeTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			if(!qkey.size()) cout << "No matching keys found.\n";
 			else{
 				for(int i=0;i<qkey.size();i++){
@@ -186,8 +201,26 @@ int main(){
 	sort(insertTime.begin(),insertTime.end());
 	sort(pointTime.begin(),pointTime.end());
 	sort(rangeTime.begin(),rangeTime.end());
-	cout << insertTime[0] << "\t" << insertTime[insertTime.size()-1] << "\n";
-	cout << pointTime[0] << "\t" << pointTime[pointTime.size()-1] << "\n";
-	cout << rangeTime[0] << "\t" << rangeTime[rangeTime.size()-1] << "\n";
+	double sum = accumulate(insertTime.begin(),insertTime.end(),0.0);
+	double mean = sum / insertTime.size();
+	double sq_sum = inner_product(insertTime.begin(),insertTime.end(),insertTime.begin(),0.0);
+	double std_dev = sqrt(sq_sum/insertTime.size() - mean*mean);
+	cout << "Insert query stats:\n";
+	cout << "Minimum: " << insertTime[0] << " us\nMaximum : " << insertTime[insertTime.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	sum = accumulate(pointTime.begin(),pointTime.end(),0.0);
+	mean = sum / pointTime.size();
+	sq_sum = inner_product(pointTime.begin(),pointTime.end(),pointTime.begin(),0.0);
+	std_dev = sqrt(sq_sum/pointTime.size() - mean*mean);
+	cout << "Point query stats:\n";
+	cout << "Minimum: " << pointTime[0] << " us\nMaximum : " << pointTime[pointTime.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	sum = accumulate(rangeTime.begin(),rangeTime.end(),0.0);
+	mean = sum / rangeTime.size();
+	sq_sum = inner_product(rangeTime.begin(),rangeTime.end(),rangeTime.begin(),0.0);
+	std_dev = sqrt(sq_sum/rangeTime.size() - mean*mean);
+	cout << "Range query stats:\n";
+	cout << "Minimum: " << rangeTime[0] << " us\nMaximum : " << rangeTime[rangeTime.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
 	return 0;
 }
