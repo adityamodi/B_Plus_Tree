@@ -8042,7 +8042,8 @@ Keys in given range 0.245123 and 0.246293 are:
 0.245949 : dbgxos
 
 Keys in given range 0.595164 and 0.595996 are: 
-No matching keys found.
+0.595167 : zp
+0.59579 : lmovuh
 
 Keys in given range 0.147502 and 0.147558 are: 
 No matching keys found.
@@ -8222,15 +8223,7 @@ Inserted key: 0.345996
 Number of nodes: 42
 
 Keys in given range 0.603241 and 0.604029 are: 
-0.589302 : sedhgttp
-0.589786 : d
-0.590729 : iv
-0.591053 : slesnrtz
-0.595167 : zp
-0.59579 : lmovuh
-0.596081 : uhuqpc
-0.597175 : djharrv
-0.601475 : u
+No matching keys found.
 
 Inserted key: 0.523704
 Number of nodes: 42
@@ -9151,3 +9144,6 @@ Keys in given range 0.148075 and 0.149321 are:
 0.148518 : jphu
 0.14893 : mfe
 
+864	11198
+314	2064
+304	2005

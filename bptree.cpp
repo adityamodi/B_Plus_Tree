@@ -183,5 +183,11 @@ int main(){
 	out << nodeCount << "\n";
 	out << keyCount << "\n";
 	out.close();
+	sort(insertTime.begin(),insertTime.end());
+	sort(pointTime.begin(),pointTime.end());
+	sort(rangeTime.begin(),rangeTime.end());
+	cout << insertTime[0] << "\t" << insertTime[insertTime.size()-1] << "\n";
+	cout << pointTime[0] << "\t" << pointTime[pointTime.size()-1] << "\n";
+	cout << rangeTime[0] << "\t" << rangeTime[rangeTime.size()-1] << "\n";
 	return 0;
 }

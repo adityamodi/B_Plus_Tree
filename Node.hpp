@@ -21,6 +21,7 @@ public:
 	void writeNode(string s);
 	void insertintoNode(double key, string fn, int flag,int = 0);
 	string splitNode();
+	void setParent();
 };
 
 Node::Node(bool flag){
@@ -87,6 +88,15 @@ void Node::writeNode(string s){
 	file.close();
 }
 
+void Node::setParent(){
+	Node ch;
+	for(int i=0;i<fileName.size();i++){
+		ch.readNode(fileName[i]);
+		ch.parName = fName;
+		ch.writeNode(ch.fName);
+	}
+}
+
 string Node::splitNode(){
 	assert(keys.size() + 1 == fileName.size());
 	assert(keys.size() == numKeys);
@@ -137,6 +147,7 @@ string Node::splitNode(){
 	//cout << "\nsplitnode : \n";
 	if(parNode.numKeys > M) newNode.parName = parNode.splitNode();
 	//newNode.printNode();
+	if(!isLeaf) newNode.setParent();
 	newNode.writeNode(newName);
 	parNode.writeNode(parName);
 	return fin;
