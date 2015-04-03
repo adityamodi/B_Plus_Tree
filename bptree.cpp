@@ -45,8 +45,7 @@ void addKey(string root, double key, string data){
 	N.writeNode(leaf);
 	fn = "./data/" + fn;
 	ofstream file;
-	strcpy(filestr, fn.c_str());
-	file.open(filestr);
+	file.open(fn.c_str(),ios::trunc);
 	file << data << "\n";
 	file.close();
 }
@@ -129,16 +128,17 @@ int main(){
 	else{
 		bpt = makeRoot();
 		ifstream init;
-		init.open("assgn2_bplus_data1.txt");
+		init.open("assgn2_bplus_data.txt");
 		while(!init.eof() && init >> key){
 			init >> data;
 			addKey(bpt,key,data);
-			cout << "Inserted key: " << key << "\n";
-			cout << "Number of nodes: " << nodeCount << "\n\n";	
+			//cout << "Inserted key: " << key << "\n";
+			//cout << "Number of nodes: " << nodeCount << "\n\n";	
 		}
+		init.close();
 	}
 	config.close();
-	cout << "maxkeys : " << M << "\n";
+	//cout << "maxkeys : " << M << "\n";
 	ifstream pnts;
 	pnts.open("querysample.txt");
 	while(!pnts.eof() && pnts >> query){
@@ -149,37 +149,38 @@ int main(){
 			addKey(bpt,key,data);
 			auto t1 = high_resolution_clock::now();
 			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			cout << "Inserted key: " << key << "\n";
-			cout << "Number of nodes: " << nodeCount << "\n\n";
+			cout << "i:" << key << "\n";
+			//cout << "Number of nodes: " << nodeCount << "\n\n";
 		}
 		else if(query == 1){
 			qkey.clear();
 			qdata.clear();
-			cout << "When searched for " << key << " we get:\n";
+			cout << "p:" << key << ":";
 			auto t0 = high_resolution_clock::now();
-			pointQuery(bpt,key,qkey,qdata);
+			rangeQuery(bpt,key,key,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
 			pointTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			if(!qkey.size()) cout << "No matching key found\n";
-			else cout << qkey[0] << " : " << qdata[0] << "\n";
-			cout << "\n";
+			if(!qkey.size()) cout << "not found\n";
+			else cout << "found\n";
+			//else cout << qkey[0] << " : " << qdata[0] << "\n";
+			//cout << "\n";
 		}
 		else if(query == 2){
 			pnts >> key2;
 			qkey.clear();
 			qdata.clear();
-			cout << "Keys in given range " << key - key2 << " and " << key + key2 << " are: \n";
+			cout << "r:\n";
 			auto t0 = high_resolution_clock::now();
 			rangeQuery(bpt,key - key2,key + key2,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
 			rangeTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			if(!qkey.size()) cout << "No matching keys found.\n";
+			if(!qkey.size()) cout << "not found\n";
 			else{
 				for(int i=0;i<qkey.size();i++){
-					cout << qkey[i] << " : " << qdata[i] << "\n";
+					cout << qkey[i] << "\n";
 				}
 			}
-			cout << "\n";
+			//cout << "\n";
 		}
 		else if(query == 4){
 			pnts >> key2;
