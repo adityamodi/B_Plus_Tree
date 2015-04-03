@@ -129,7 +129,7 @@ int main(){
 	else{
 		bpt = makeRoot();
 		ifstream init;
-		init.open("assgn2_bplus_data.txt");
+		init.open("assgn2_bplus_data1.txt");
 		while(!init.eof() && init >> key){
 			init >> data;
 			auto t0 = high_resolution_clock::now();
