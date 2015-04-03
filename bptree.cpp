@@ -132,10 +132,7 @@ int main(){
 		init.open("assgn2_bplus_data1.txt");
 		while(!init.eof() && init >> key){
 			init >> data;
-			auto t0 = high_resolution_clock::now();
 			addKey(bpt,key,data);
-			auto t1 = high_resolution_clock::now();
-			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			cout << "Inserted key: " << key << "\n";
 			cout << "Number of nodes: " << nodeCount << "\n\n";	
 		}
