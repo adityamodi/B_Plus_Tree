@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define INF 100.0
+#define ERR 1e-8
 
 typedef long long ll;
 
+int fileAccess = 0;
 int M,keyCount=0,nodeCount=0;
 char filestr[16];
 string bpt;
@@ -25,8 +27,8 @@ string findDestNode(string nod,double key){	//returns file name for the candidat
 	//cout << "\nsearching this node : \n";
 	//N.printNode();
 	if(!N.isLeaf){
-		int i = lower_bound(N.keys.begin(),N.keys.end(),key) - N.keys.begin();
-		if(i == N.numKeys-1 && N.keys[i] < key) i++;
+		int i = lower_bound(N.keys.begin(),N.keys.end(),key - ERR) - N.keys.begin();
+		if(i == N.numKeys-1 && N.keys[i] < key + ERR) i++;
 		return findDestNode(N.fileName[i],key);
 	}
 	return nod;
@@ -110,11 +112,12 @@ void rangeQuery(string root, double a, double b, vector<double>& qkey, vector<st
 }
 
 int main(){
-	int query,fresh;
+	int query,fresh,qc=0;
 	double key,key2;
 	vector<double> qkey;
 	vector<string> qdata;
 	vector<ll> insertTime, pointTime, rangeTime;
+    vector<int> insertAccess, pointAccess, rangeAccess;
 	string data;
 	ifstream config;
 	config.open("bplustree.config");
@@ -132,8 +135,8 @@ int main(){
 		while(!init.eof() && init >> key){
 			init >> data;
 			addKey(bpt,key,data);
-			//cout << "Inserted key: " << key << "\n";
-			//cout << "Number of nodes: " << nodeCount << "\n\n";	
+            qc++;
+            cerr << qc << endl;
 		}
 		init.close();
 	}
@@ -142,12 +145,16 @@ int main(){
 	ifstream pnts;
 	pnts.open("querysample.txt");
 	while(!pnts.eof() && pnts >> query){
+        fileAccess = 0;
 		pnts >> key;
 		if(query == 0){
 			pnts >> data;
 			auto t0 = high_resolution_clock::now();
 			addKey(bpt,key,data);
 			auto t1 = high_resolution_clock::now();
+            qc++;
+            cerr << qc << endl;
+            insertAccess.push_back(fileAccess);
 			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			cout << "i:" << key << "\n";
 			//cout << "Number of nodes: " << nodeCount << "\n\n";
@@ -157,8 +164,9 @@ int main(){
 			qdata.clear();
 			cout << "p:" << key << ":";
 			auto t0 = high_resolution_clock::now();
-			rangeQuery(bpt,key,key,qkey,qdata);
+			rangeQuery(bpt,key-ERR,key+ERR,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
+            pointAccess.push_back(fileAccess);
 			pointTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			if(!qkey.size()) cout << "not found\n";
 			else cout << "found\n";
@@ -171,8 +179,9 @@ int main(){
 			qdata.clear();
 			cout << "r:\n";
 			auto t0 = high_resolution_clock::now();
-			rangeQuery(bpt,key - key2,key + key2,qkey,qdata);
+			rangeQuery(bpt,key - key2 - ERR,key + key2 + ERR,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
+            rangeAccess.push_back(fileAccess);
 			rangeTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
 			if(!qkey.size()) cout << "not found\n";
 			else{
@@ -203,22 +212,47 @@ int main(){
 	double mean = sum / insertTime.size();
 	double sq_sum = inner_product(insertTime.begin(),insertTime.end(),insertTime.begin(),0.0);
 	double std_dev = sqrt(sq_sum/insertTime.size() - mean*mean);
-	cout << "Insert query stats:\n";
+	cout << "Insert query time stats:\n";
 	cout << "Minimum: " << insertTime[0] << " us\nMaximum : " << insertTime[insertTime.size()-1] << " us\n";
 	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
 	sum = accumulate(pointTime.begin(),pointTime.end(),0.0);
 	mean = sum / pointTime.size();
 	sq_sum = inner_product(pointTime.begin(),pointTime.end(),pointTime.begin(),0.0);
 	std_dev = sqrt(sq_sum/pointTime.size() - mean*mean);
-	cout << "Point query stats:\n";
+	cout << "Point query time stats:\n";
 	cout << "Minimum: " << pointTime[0] << " us\nMaximum : " << pointTime[pointTime.size()-1] << " us\n";
 	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
 	sum = accumulate(rangeTime.begin(),rangeTime.end(),0.0);
 	mean = sum / rangeTime.size();
 	sq_sum = inner_product(rangeTime.begin(),rangeTime.end(),rangeTime.begin(),0.0);
 	std_dev = sqrt(sq_sum/rangeTime.size() - mean*mean);
-	cout << "Range query stats:\n";
+	cout << "Range query time stats:\n";
 	cout << "Minimum: " << rangeTime[0] << " us\nMaximum : " << rangeTime[rangeTime.size()-1] << " us\n";
 	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
-	return 0;
+	sort(insertAccess.begin(),insertAccess.end());
+	sort(pointAccess.begin(),pointAccess.end());
+	sort(rangeAccess.begin(),rangeAccess.end());
+	sum = accumulate(insertAccess.begin(),insertAccess.end(),0.0);
+	mean = sum / insertAccess.size();
+	sq_sum = inner_product(insertAccess.begin(),insertAccess.end(),insertAccess.begin(),0.0);
+	std_dev = sqrt(sq_sum/insertAccess.size() - mean*mean);
+	cout << "Insert query file access stats:\n";
+	cout << "Minimum: " << insertAccess[0] << " us\nMaximum : " << insertAccess[insertAccess.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	sum = accumulate(pointAccess.begin(),pointAccess.end(),0.0);
+	mean = sum / pointAccess.size();
+	sq_sum = inner_product(pointAccess.begin(),pointAccess.end(),pointAccess.begin(),0.0);
+	std_dev = sqrt(sq_sum/pointAccess.size() - mean*mean);
+	cout << "Point query file access stats:\n";
+	cout << "Minimum: " << pointAccess[0] << " us\nMaximum : " << pointAccess[pointAccess.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	sum = accumulate(rangeAccess.begin(),rangeAccess.end(),0.0);
+	mean = sum / rangeAccess.size();
+	sq_sum = inner_product(rangeAccess.begin(),rangeAccess.end(),rangeAccess.begin(),0.0);
+	std_dev = sqrt(sq_sum/rangeAccess.size() - mean*mean);
+	cout << "Range query file access stats:\n";
+	cout << "Minimum: " << rangeAccess[0] << " us\nMaximum : " << rangeAccess[rangeAccess.size()-1] << " us\n";
+	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+
+    return 0;
 }

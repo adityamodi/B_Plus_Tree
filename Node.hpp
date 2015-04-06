@@ -42,9 +42,9 @@ void Node::printNode(){
 }
 
 void Node::insertintoNode(double key, string fn, int flag, int is_up){
-	int ind = lower_bound(keys.begin(),keys.end(),key) - keys.begin();
+	int ind = lower_bound(keys.begin(),keys.end(),key - ERR) - keys.begin();
 	if(is_up && !keys.empty()){
-		ind = upper_bound(keys.begin(),keys.end(),key) - keys.begin();
+		ind = upper_bound(keys.begin(),keys.end(),key + ERR) - keys.begin();
 	}
 	//cout << ind << " : this is madness\n";
 	vector<double>::iterator it1 = keys.begin();
@@ -58,6 +58,7 @@ void Node::insertintoNode(double key, string fn, int flag, int is_up){
 
 void Node::readNode(string s){
 	s = "./data/" + s;
+    fileAccess++;
 	double temp;
 	string ts;
 	keys.clear();
@@ -79,6 +80,7 @@ void Node::readNode(string s){
 
 void Node::writeNode(string s){
 	s = "./data/" + s;
+    fileAccess++;
 	ofstream file;
 	strcpy(filestr, s.c_str());
 	file.open(filestr,ios::trunc);
@@ -141,7 +143,7 @@ string Node::splitNode(){
 		bpt = parName;
 	}
 	else parNode.readNode(parName);
-	if(key < newNode.keys[newNode.numKeys - 1]) parNode.insertintoNode(key,newName,1,1);
+	if(key < newNode.keys[newNode.numKeys - 1] + ERR) parNode.insertintoNode(key,newName,1,1);
 	else parNode.insertintoNode(key,newName,1);
 	newNode.parName = parName;
 	//cout << "\nsplitnode : \n";

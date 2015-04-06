@@ -6,7 +6,7 @@ DEBUG=-g
 all: main
 
 main: bptree.cpp
-	$(CPP) $(DEBUG) bptree.cpp -o bpt
+	$(CPP) $(DEBUG) bptree.cpp -o bpt.o
 
 clean: fresh
 	rm bpt
