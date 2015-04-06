@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define INF 100.0
-#define ERR 1e-8
+#define ERR 1e-10
 
 typedef long long ll;
 
@@ -28,7 +28,7 @@ string findDestNode(string nod,double key){	//returns file name for the candidat
 	//N.printNode();
 	if(!N.isLeaf){
 		int i = lower_bound(N.keys.begin(),N.keys.end(),key - ERR) - N.keys.begin();
-		if(i == N.numKeys-1 && N.keys[i] < key + ERR) i++;
+		if(i == N.numKeys-1 && N.keys[i] < key - ERR) i++;
 		return findDestNode(N.fileName[i],key);
 	}
 	return nod;
@@ -111,7 +111,21 @@ void rangeQuery(string root, double a, double b, vector<double>& qkey, vector<st
 	}
 }
 
-int main(){
+void printTree(string bpt){
+	Node N;
+	N.readNode(bpt);
+	if(N.isLeaf){
+		N.printNode();
+	}
+	else{
+		N.printNode();
+		for(int i=0;i<N.fileName.size();i++){
+			printTree(N.fileName[i]);
+		}
+	}
+}
+
+int main(int argc, char * ARGV[]){
 	int query,fresh,qc=0;
 	double key,key2;
 	vector<double> qkey;
@@ -131,7 +145,7 @@ int main(){
 	else{
 		bpt = makeRoot();
 		ifstream init;
-		init.open("assgn2_bplus_data.txt");
+		init.open("assgn2_bplus_data1.txt");
 		while(!init.eof() && init >> key){
 			init >> data;
 			addKey(bpt,key,data);
@@ -141,10 +155,31 @@ int main(){
 		init.close();
 	}
 	config.close();
+	ofstream out;
+	out.open("bplustree.config",ios::trunc);
+	cout << M << "\n";
+    out << M << "\n";
+    out << "0\n";
+    out << bpt << "\n";
+    out << nodeCount << "\n";
+    out << keyCount << "\n";
+    out.close();
+    printTree(bpt);
+    //cerr << ARGV[1] << endl;
+    if(argc < 2){
+        cout << "No query file given\n";
+        return 0;
+    }
 	//cout << "maxkeys : " << M << "\n";
 	ifstream pnts;
-	pnts.open("querysample.txt");
+	cerr << ARGV[1] << endl;
+	pnts.open(ARGV[1]);
+    if(!pnts.is_open() || ARGV[1][0] == '>'){
+        cout << "No query file given\n";
+        return 0;
+    }
 	while(!pnts.eof() && pnts >> query){
+		cerr << "here\n";
         fileAccess = 0;
 		pnts >> key;
 		if(query == 0){
@@ -164,7 +199,7 @@ int main(){
 			qdata.clear();
 			cout << "p:" << key << ":";
 			auto t0 = high_resolution_clock::now();
-			rangeQuery(bpt,key-ERR,key+ERR,qkey,qdata);
+			rangeQuery(bpt,key,key,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
             pointAccess.push_back(fileAccess);
 			pointTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
@@ -179,7 +214,7 @@ int main(){
 			qdata.clear();
 			cout << "r:\n";
 			auto t0 = high_resolution_clock::now();
-			rangeQuery(bpt,key - key2 - ERR,key + key2 + ERR,qkey,qdata);
+			rangeQuery(bpt,key - key2,key + key2,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
             rangeAccess.push_back(fileAccess);
 			rangeTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
@@ -197,7 +232,7 @@ int main(){
 		}
 	}
 	pnts.close();
-	ofstream out;
+	//ofstream out;
 	out.open("bplustree.config",ios::trunc);
 	out << M << "\n";
 	out << "0\n";
@@ -237,22 +272,21 @@ int main(){
 	sq_sum = inner_product(insertAccess.begin(),insertAccess.end(),insertAccess.begin(),0.0);
 	std_dev = sqrt(sq_sum/insertAccess.size() - mean*mean);
 	cout << "Insert query file access stats:\n";
-	cout << "Minimum: " << insertAccess[0] << " us\nMaximum : " << insertAccess[insertAccess.size()-1] << " us\n";
-	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	cout << "Minimum: " << insertAccess[0] << "\nMaximum : " << insertAccess[insertAccess.size()-1] << "\n";
+	cout << "Average: " << mean << "\nStd. dev. : " << std_dev << "\n";
 	sum = accumulate(pointAccess.begin(),pointAccess.end(),0.0);
 	mean = sum / pointAccess.size();
 	sq_sum = inner_product(pointAccess.begin(),pointAccess.end(),pointAccess.begin(),0.0);
 	std_dev = sqrt(sq_sum/pointAccess.size() - mean*mean);
 	cout << "Point query file access stats:\n";
-	cout << "Minimum: " << pointAccess[0] << " us\nMaximum : " << pointAccess[pointAccess.size()-1] << " us\n";
-	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
+	cout << "Minimum: " << pointAccess[0] << "\nMaximum : " << pointAccess[pointAccess.size()-1] << "\n";
+	cout << "Average: " << mean << "\nStd. dev. : " << std_dev << "\n";
 	sum = accumulate(rangeAccess.begin(),rangeAccess.end(),0.0);
 	mean = sum / rangeAccess.size();
 	sq_sum = inner_product(rangeAccess.begin(),rangeAccess.end(),rangeAccess.begin(),0.0);
 	std_dev = sqrt(sq_sum/rangeAccess.size() - mean*mean);
 	cout << "Range query file access stats:\n";
-	cout << "Minimum: " << rangeAccess[0] << " us\nMaximum : " << rangeAccess[rangeAccess.size()-1] << " us\n";
-	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";
-
+	cout << "Minimum: " << rangeAccess[0] << "\nMaximum : " << rangeAccess[rangeAccess.size()-1] << "\n";
+	cout << "Average: " << mean << "\nStd. dev. : " << std_dev << "\n";
     return 0;
 }

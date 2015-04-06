@@ -1,0 +1,53 @@
+2
+
+Printed node: 
+fileName: f000003
+isLeaf: 0
+parName: null
+numKeys: 2
+0.06
+0.11
+f000001
+f000002
+f000004
+
+Printed node: 
+fileName: f000001
+isLeaf: 1
+parName: f000003
+numKeys: 2
+0.06
+0.06
+d000006
+d000003
+f000002
+
+Printed node: 
+fileName: f000002
+isLeaf: 1
+parName: f000003
+numKeys: 2
+0.11
+0.11
+d000005
+d000004
+f000004
+
+Printed node: 
+fileName: f000004
+isLeaf: 1
+parName: f000003
+numKeys: 2
+0.11
+0.98
+d000002
+d000001
+null
+r:
+0.06
+0.06
+0.11
+0.11
+0.11
+0.98
+p:0.06:found
