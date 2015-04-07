@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define INF 100.0
-#define ERR 1e-10
+#define ERR 1e-8
 
 typedef long long ll;
 
 int fileAccess = 0;
 int M,keyCount=0,nodeCount=0;
-char filestr[16];
 string bpt;
 
 #include "Node.hpp"
@@ -20,31 +19,29 @@ using chrono::duration_cast;
 using chrono::high_resolution_clock;
 using chrono::microseconds;
 
-string findDestNode(string nod,double key){	//returns file name for the candidate leaf Node
+string searchNode(string nod, double key){
 	Node N;
 	N.readNode(nod);
+	assert(N.numKeys == N.keys.size());
+	assert(N.numKeys == N.fileName.size()-1);
 	if(N.keys.size()==0) return nod;
-	//cout << "\nsearching this node : \n";
-	//N.printNode();
+	//int i;
 	if(!N.isLeaf){
-		int i = lower_bound(N.keys.begin(),N.keys.end(),key - ERR) - N.keys.begin();
-		if(i == N.numKeys-1 && N.keys[i] < key - ERR) i++;
-		return findDestNode(N.fileName[i],key);
+		int i = lower_bound(N.keys.begin(),N.keys.end(),key-ERR) - N.keys.begin();
+		return searchNode(N.fileName[i],key);
 	}
 	return nod;
 }
 
 void addKey(string root, double key, string data){
-	string leaf = findDestNode(root,key);	//returns destination leaf Node for given key
+	string leaf = searchNode(root,key);	//returns destination leaf Node for given key
 	Node N;
 	N.readNode(leaf);
 	string fn = getDataFilename();
-	N.insertintoNode(key,fn,0);
-	//N.printNode();
+	N.insertintoLeaf(key,fn);
 	if(N.numKeys > M){
-		root = N.splitNode();		//split the Node since more keys than capacity
+		N.splitLeaf();		//split the Node since more keys than capacity
 	}
-	N.writeNode(leaf);
 	fn = "./data/" + fn;
 	ofstream file;
 	file.open(fn.c_str(),ios::trunc);
@@ -60,44 +57,21 @@ string makeRoot(){
 	return root;
 }
 
-void pointQuery(string root, double a, vector<double>& qkey, vector<string> &qdata){
-	string leaf = findDestNode(root,a);
-	string data,fn;
-	Node N;
-	N.readNode(leaf);
-	if(N.keys.empty()){
-		return;
-	}
-	int i = lower_bound(N.keys.begin(),N.keys.end(),a) - N.keys.begin();
-	if(i == N.numKeys || N.keys[i]!=a){
-		return;	
-	}
-	else{
-		qkey.push_back(N.keys[i]);
-		fn = "./data/" + N.fileName[i];
-		ifstream file;
-		file.open(fn.c_str());
-		file >> data;
-		file.close();
-		qdata.push_back(data);
-	}
-}
-
 void rangeQuery(string root, double a, double b, vector<double>& qkey, vector<string> &qdata){
-	string leaf = findDestNode(root,a);
+	string leaf = searchNode(root,a);
 	string data,fn;
 	Node N;
 	N.readNode(leaf);
 	if(N.keys.empty()){
 		return;
 	}
-	int i = lower_bound(N.keys.begin(),N.keys.end(),a) - N.keys.begin();
+	int i = lower_bound(N.keys.begin(),N.keys.end(),a-ERR) - N.keys.begin();
 	while(1){
 		if(i == N.numKeys && N.fileName[i]!="null"){
 			N.readNode(N.fileName[i]);
 			i=0;
 		}
-		if(N.keys[i] > b or i == N.numKeys) break;
+		if(N.keys[i] - ERR > b or i == N.numKeys) break;
 		else{
 			qkey.push_back(N.keys[i]);
 			fn = "./data/" + N.fileName[i];
@@ -145,32 +119,30 @@ int main(int argc, char * ARGV[]){
 	else{
 		bpt = makeRoot();
 		ifstream init;
-		init.open("assgn2_bplus_data1.txt");
+		init.open("assgn2_bplus_data.txt");
 		while(!init.eof() && init >> key){
 			init >> data;
 			addKey(bpt,key,data);
             qc++;
             cerr << qc << endl;
+            //cerr << bpt << endl;
 		}
 		init.close();
 	}
+	cerr << bpt;
 	config.close();
 	ofstream out;
 	out.open("bplustree.config",ios::trunc);
-	cout << M << "\n";
     out << M << "\n";
     out << "0\n";
     out << bpt << "\n";
     out << nodeCount << "\n";
     out << keyCount << "\n";
     out.close();
-    printTree(bpt);
-    //cerr << ARGV[1] << endl;
     if(argc < 2){
         cout << "No query file given\n";
         return 0;
     }
-	//cout << "maxkeys : " << M << "\n";
 	ifstream pnts;
 	cerr << ARGV[1] << endl;
 	pnts.open(ARGV[1]);
@@ -179,7 +151,6 @@ int main(int argc, char * ARGV[]){
         return 0;
     }
 	while(!pnts.eof() && pnts >> query){
-		cerr << "here\n";
         fileAccess = 0;
 		pnts >> key;
 		if(query == 0){
@@ -191,48 +162,43 @@ int main(int argc, char * ARGV[]){
             cerr << qc << endl;
             insertAccess.push_back(fileAccess);
 			insertTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			cout << "i:" << key << "\n";
-			//cout << "Number of nodes: " << nodeCount << "\n\n";
+			cout << "insert (" << key << "->" << data << "): Success\n";
 		}
 		else if(query == 1){
 			qkey.clear();
 			qdata.clear();
-			cout << "p:" << key << ":";
+			cout << "Point Query (" << key << "): ";
 			auto t0 = high_resolution_clock::now();
 			rangeQuery(bpt,key,key,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
             pointAccess.push_back(fileAccess);
 			pointTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			if(!qkey.size()) cout << "not found\n";
-			else cout << "found\n";
-			//else cout << qkey[0] << " : " << qdata[0] << "\n";
-			//cout << "\n";
+			if(!qkey.size()) cout << "Key does not exist!\n";
+			else{
+				cout << qdata[0];
+				for(int i=1;i<qdata.size();i++) cout << ", " << qdata[i];
+				cout << endl;
+			}
 		}
 		else if(query == 2){
 			pnts >> key2;
 			qkey.clear();
 			qdata.clear();
-			cout << "r:\n";
+			cout << "Range Query (c:" << key <<",r:" << key2 << "): ";
 			auto t0 = high_resolution_clock::now();
 			rangeQuery(bpt,key - key2,key + key2,qkey,qdata);
 			auto t1 = high_resolution_clock::now();
             rangeAccess.push_back(fileAccess);
 			rangeTime.push_back(ll(duration_cast<microseconds>(t1-t0).count()));
-			if(!qkey.size()) cout << "not found\n";
+			if(!qkey.size()) cout << "No such key exists\n";
 			else{
-				for(int i=0;i<qkey.size();i++){
-					cout << qkey[i] << "\n";
-				}
+				cout << qkey[0] << "->" << qdata[0];
+				for(int i=1;i<qkey.size();i++) cout << ", " << qkey[i] << "->" << qdata[i];
+				cout << endl;
 			}
-			//cout << "\n";
-		}
-		else if(query == 4){
-			pnts >> key2;
-			continue;
 		}
 	}
 	pnts.close();
-	//ofstream out;
 	out.open("bplustree.config",ios::trunc);
 	out << M << "\n";
 	out << "0\n";
@@ -247,6 +213,7 @@ int main(int argc, char * ARGV[]){
 	double mean = sum / insertTime.size();
 	double sq_sum = inner_product(insertTime.begin(),insertTime.end(),insertTime.begin(),0.0);
 	double std_dev = sqrt(sq_sum/insertTime.size() - mean*mean);
+	cout << "\n###############\n##STATISTICS##\n##############\n\n";
 	cout << "Insert query time stats:\n";
 	cout << "Minimum: " << insertTime[0] << " us\nMaximum : " << insertTime[insertTime.size()-1] << " us\n";
 	cout << "Average: " << mean << " us\nStd. dev. : " << std_dev << " us\n";

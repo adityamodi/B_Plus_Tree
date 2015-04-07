@@ -19,8 +19,10 @@ public:
 	void printNode();
 	void readNode(string s);
 	void writeNode(string s);
-	void insertintoNode(double key, string fn, int flag,int = 0);
-	string splitNode();
+	void insertintoNode(double key, string lft, string rgt);
+	void insertintoLeaf(double key, string fn);
+	void splitNode();
+	void splitLeaf();
 	void setParent();
 };
 
@@ -41,17 +43,29 @@ void Node::printNode(){
 	for(int i=0;i<=numKeys;i++) cout << fileName[i] << "\n";
 }
 
-void Node::insertintoNode(double key, string fn, int flag, int is_up){
-	int ind = lower_bound(keys.begin(),keys.end(),key - ERR) - keys.begin();
-	if(is_up && !keys.empty()){
-		ind = upper_bound(keys.begin(),keys.end(),key +ERR) - keys.begin();
-	}
-	//cout << ind << " : this is madness\n";
+void Node::insertintoLeaf(double key, string fn){
+	int ind = lower_bound(keys.begin(),keys.end(),key-ERR) - keys.begin();
 	vector<double>::iterator it1 = keys.begin();
 	keys.insert(it1+ind,key);
 	vector<string>::iterator it = fileName.begin();
-	fileName.insert(it+ind+flag,fn);
+	fileName.insert(it+ind,fn);
 	numKeys++;
+	writeNode(fName);
+	assert(keys.size() + 1 == fileName.size());
+	assert(keys.size() == numKeys);
+}
+
+void Node::insertintoNode(double key, string lft, string rgt){
+	int i;
+	for(i=0;i<fileName.size();i++){
+		if(!lft.compare(fileName[i])) break;
+	}
+	vector<string>::iterator itf = fileName.begin();
+	fileName.insert(itf+i+1,rgt);
+	vector<double>::iterator it = keys.begin();
+	keys.insert(it+i,key);
+	numKeys++;
+	writeNode(fName);
 	assert(keys.size() + 1 == fileName.size());
 	assert(keys.size() == numKeys);
 }
@@ -64,8 +78,7 @@ void Node::readNode(string s){
 	keys.clear();
 	fileName.clear();
 	ifstream file;
-	strcpy(filestr, s.c_str());
-	file.open(filestr);
+	file.open(s.c_str());
 	file >> fName >> isLeaf >> parName >> numKeys;
 	for(int i=0;i<numKeys;i++){
 		file >> temp;
@@ -82,8 +95,7 @@ void Node::writeNode(string s){
 	s = "./data/" + s;
     fileAccess++;
 	ofstream file;
-	strcpy(filestr, s.c_str());
-	file.open(filestr,ios::trunc);
+	file.open(s.c_str(),ios::trunc);
 	file << fName << "\n" << isLeaf << "\n" << parName << "\n" << numKeys << "\n";
 	for(int i=0;i<numKeys;i++) file << keys[i] << "\n";
 	for(int i=0;i<=numKeys;i++) file << fileName[i] << "\n";
@@ -99,43 +111,28 @@ void Node::setParent(){
 	}
 }
 
-string Node::splitNode(){
+void Node::splitNode(){
 	assert(keys.size() + 1 == fileName.size());
 	assert(keys.size() == numKeys);
 	string newName = getNodename();
 	double key;
-	string fin = newName;
 	Node newNode;
 	newNode.fileName.clear();
-	if(isLeaf){
-		newNode.isLeaf = 1;
-		for(int i=(numKeys-1)/2;i<numKeys;i++){
-			newNode.keys.push_back(keys[i]);
-			newNode.fileName.push_back(fileName[i]);
-		}
-		newNode.fileName.push_back(fileName[numKeys]);
-		keys.erase(keys.begin() + (numKeys-1)/2,keys.end());
-		fileName.erase(fileName.begin() + (numKeys-1)/2, fileName.end());
-		fileName.push_back(newName);
-		newNode.numKeys = numKeys - numKeys/2;
-		numKeys = numKeys/2;
-		key = keys[numKeys-1];
-	}
-	else{
-		key = keys[(numKeys-1)/2];
-		for(int i=(numKeys+1)/2;i<numKeys;i++){
-			newNode.keys.push_back(keys[i]);
-			newNode.fileName.push_back(fileName[i]);
-		}
-		newNode.fileName.push_back(fileName[numKeys]);
-		keys.erase(keys.begin() + (numKeys-1)/2,keys.end());
-		fileName.erase(fileName.begin() + (numKeys+1)/2, fileName.end());
-		newNode.numKeys = numKeys/2;
-		numKeys = (numKeys-1)/2;
-	}
 	newNode.fName = newName;
+	key = keys[numKeys/2];
+	for(int i=numKeys/2+1;i<numKeys;i++){
+		newNode.keys.push_back(keys[i]);
+		newNode.fileName.push_back(fileName[i]);
+	}
+	newNode.fileName.push_back(fileName[numKeys]);
+	keys.erase(keys.begin()+numKeys/2,keys.end());
+	fileName.erase(fileName.begin()+numKeys/2+1,fileName.end());
+	newNode.numKeys = numKeys - numKeys/2 -1;
+	numKeys = numKeys/2;
+	newNode.setParent();
 	Node parNode;
-	if(parName == "null"){
+	if(parName=="null"){
+		//new parent
 		parNode.fileName.clear();
 		parNode.fileName.push_back(fName);
 		parName = getNodename();
@@ -143,14 +140,46 @@ string Node::splitNode(){
 		bpt = parName;
 	}
 	else parNode.readNode(parName);
-	if(key < newNode.keys[newNode.numKeys - 1]) parNode.insertintoNode(key,newName,1,1);
-	else parNode.insertintoNode(key,newName,1);
 	newNode.parName = parName;
-	//cout << "\nsplitnode : \n";
-	if(parNode.numKeys > M) newNode.parName = parNode.splitNode();
-	//newNode.printNode();
-	if(!isLeaf) newNode.setParent();
 	newNode.writeNode(newName);
-	parNode.writeNode(parName);
-	return fin;
+	writeNode(fName);
+	parNode.insertintoNode(key,fName,newName);
+	if(parNode.numKeys>M) parNode.splitNode();
+}
+
+void Node::splitLeaf(){
+	assert(keys.size() + 1 == fileName.size());
+	assert(keys.size() == numKeys);
+	string newName = getNodename();
+	double key;
+	string fin = newName;
+	Node newNode;
+	newNode.fileName.clear();
+	newNode.isLeaf = 1;
+	for(int i=numKeys/2+1;i<numKeys;i++){
+		newNode.keys.push_back(keys[i]);
+		newNode.fileName.push_back(fileName[i]);
+	}
+	newNode.fName = newName;
+	newNode.fileName.push_back(fileName[numKeys]);
+	keys.erase(keys.begin()+numKeys/2+1,keys.end());
+	fileName.erase(fileName.begin()+numKeys/2+1,fileName.end());
+	fileName.push_back(newName);
+	newNode.numKeys = numKeys - numKeys/2 - 1;
+	numKeys = numKeys - numKeys/2;
+	Node parNode;
+	if(parName=="null"){
+		//new parent
+		parNode.fileName.clear();
+		parNode.fileName.push_back(fName);
+		parName = getNodename();
+		parNode.fName = parName;
+		bpt = parName;
+	}
+	else parNode.readNode(parName);
+	newNode.parName = parName;
+	newNode.writeNode(newName);
+	writeNode(fName);
+	parNode.insertintoNode(keys[numKeys-1],fName,newName);
+	if(parNode.numKeys > M) parNode.splitNode();
 }
